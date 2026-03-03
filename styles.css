@@ -204,6 +204,10 @@ section h2 {
   flex: 1 1 300px;
 }
 
+.about-image figure {
+  margin-bottom: 0;
+}
+
 /* Servicios Grid */
 .services-grid {
   display: grid;
