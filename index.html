@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AccesiVigo - Proyecto de Accesibilidad e Inclusión | Universidad de Vigo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+<!-- Header -->
+<header class="site-header" role="banner">
+  <div class="container">
+    <h1 class="logo">AccesiVigo - Universidad de Vigo</h1>
+    <p class="tagline">Proyecto de Accesibilidad e Inclusión para Personas con Discapacidad</p>
+    <nav aria-label="Menú principal">
+      <ul class="menu">
+        <li><a href="#" aria-current="page">Inicio</a></li>
+        <li><a href="#sobre-proyecto">Sobre el Proyecto</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Main -->
+<main id="main-content" class="container">
+  
+  <!-- Sobre el Proyecto -->
+  <section id="sobre-proyecto">
+    <h2>Sobre el Proyecto AccesiVigo</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>AccesiVigo es un proyecto de la <strong>Universidad de Vigo</strong> iniciado en 2026, dedicado a mejorar la calidad de vida de las personas con discapacidad en nuestra comunidad universitaria y en la sociedad gallega.</p>
+        <p>Trabajamos para eliminar barreras físicas, digitales y sociales, promoviendo la inclusión plena de estudiantes, personal y ciudadanos con diversidad funcional. Ofrecemos apoyo técnico, asesoramiento, formación y recursos adaptados.</p>
+        <p><strong>Nuestros valores:</strong> Inclusión, igualdad de oportunidades, autonomía personal, respeto a la diversidad y compromiso social.</p>
+        <p><strong>Colaboramos con:</strong> organizaciones locales de personas con discapacidad.</p>
+      </div>
+      <figure class="about-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='350'%3E%3Crect fill='%2328a745' width='500' height='350'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' fill='white' font-size='24' font-family='Arial' font-weight='bold'%3EComunidad Inclusiva%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='18' font-family='Arial'%3EUniversidad de Vigo%3C/text%3E%3C/svg%3E" 
+             alt="Estudiantes y profesores de la Universidad de Vigo, incluyendo personas con discapacidad, trabajando juntos en bibliot eca accesible">
+        <figcaption>Nuestra comunidad universitaria es diversa e inclusiva</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Servicios de Apoyo a la Discapacidad</h2>
+    <div class="services-grid">
+      <article class="service">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%230066cc' width='400' height='250'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3EApoyo Academico%3C/text%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' fill='white' font-size='14' font-family='Arial'%3EAdaptaciones Curriculares%3C/text%3E%3C/svg%3E" 
+               alt="Estudiante con discapacidad recibiendo apoyo de tutor académico, con material adaptado en múltiples formatos">
+          <figcaption class="sr-only">Asesoramiento y apoyo académico personalizado</figcaption>
+        </figure>
+        <h3>Apoyo Académico</h3>
+        <p>Asesoramiento personalizado, adaptaciones curriculares, material en formatos accesibles (braille, audio, lectura fácil), intérpretes de lengua de señas, toma de apuntes y tiempo adicional en exámenes.</p>
+      </article>
+
+      <article class="service">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%2317a2b8' width='400' height='250'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3ETecnologias Asistivas%3C/text%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' fill='white' font-size='14' font-family='Arial'%3EEquipamiento Adaptado%3C/text%3E%3C/svg%3E" 
+               alt="Sala con tecnologías de asistencia: lectores de pantalla, software de magnificación, teclados adaptados y dispositivos braille">
+          <figcaption class="sr-only">Centro de tecnologías de asistencia y apoyo técnico</figcaption>
+        </figure>
+        <h3>Tecnologías de Asistencia</h3>
+        <p>Préstamo de equipamiento adaptado, software especializado (JAWS, NVDA, magnificadores), ordenadores adaptados, dispositivos braille, y formación en el uso de tecnologías de apoyo.</p>
+      </article>
+
+      <article class="service">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%2328a745' width='400' height='250'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3EAccesibilidad Campus%3C/text%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' fill='white' font-size='14' font-family='Arial'%3EEspacios Inclusivos%3C/text%3E%3C/svg%3E" 
+               alt="Campus universitario con rampas, señalización accesible, ascensores adaptados y espacios reservados">
+          <figcaption class="sr-only">Evaluación y mejora de accesibilidad del campus</figcaption>
+        </figure>
+        <h3>Accesibilidad en el Campus</h3>
+        <p>Evaluación y mejora continua de la accesibilidad física, reserva de plazas de parking, aulas accesibles, baños adaptados, señalización podotáctil y mapas accesibles del campus.</p>
+      </article>
+
+      <article class="service">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23ffc107' width='400' height='250'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' fill='%23000' font-size='20' font-family='Arial' font-weight='bold'%3EOrientacion e Insercion%3C/text%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' fill='%23000' font-size='14' font-family='Arial'%3ELaboral%3C/text%3E%3C/svg%3E" 
+               alt="Sesión de orientación laboral con asesor y estudiante con discapacidad preparando currículum y entrevistas">
+          <figcaption class="sr-only">Programa de orientación e inserción laboral</figcaption>
+        </figure>
+        <h3>Orientación e Inserción Laboral</h3>
+        <p>Asesoramiento vocacional, preparación para el empleo, intermediación con empresas, prácticas en entorno laboral inclusivo, y bolsa de empleo especializada para graduados con discapacidad.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Actividades y Eventos -->
+  <section id="actividades">
+    <h2>Actividades y Eventos</h2>
+    <div class="projects-grid">
+      <article class="project">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%236610f2' width='400' height='250'/%3E%3Ctext x='50%25' y='38%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3EJornadas de Sensibilizacion%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3EInclusion Universitaria%3C/text%3E%3C/svg%3E" 
+               alt="Auditorio universitario con conferenciantes y público diverso, incluyendo personas con discapacidad, en jornada sobre inclusión">
+        </figure>
+        <h3>Jornadas de Sensibilización sobre Discapacidad</h3>
+        <p><strong>Cuándo:</strong> Diciembre 2025 | <strong>Participantes:</strong> 300 estudiantes y profesores | <strong>Contenido:</strong> Talleres vivenciales, testimonios de personas con discapacidad, charlas sobre inclusión laboral y derechos. Actividad gratuita y abierta a toda la comunidad universitaria.</p>
+      </article>
+
+      <article class="project">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23dc3545' width='400' height='250'/%3E%3Ctext x='50%25' y='38%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3EDeporte Adaptado%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3EActividad Fisica Inclusiva%3C/text%3E%3C/svg%3E" 
+               alt="Instalaciones deportivas universitarias con estudiantes practicando baloncesto en silla de ruedas y otras actividades adaptadas">
+        </figure>
+        <h3>Programa de Deporte Adaptado</h3>
+        <p><strong>Modalidades:</strong> Baloncesto en silla de ruedas, natación adaptada, goalball, atletismo | <strong>Horario:</strong> Martes y jueves 17:00-19:00 | Entrenadores especializados, material deportivo adaptado, y grupos mixtos que fomentan la integración. Inscripción abierta todo el año.</p>
+      </article>
+
+      <article class="project">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23fd7e14' width='400' height='250'/%3E%3Ctext x='50%25' y='38%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial' font-weight='bold'%3ETalleres de Formacion%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3ETecnologia y Empleo%3C/text%3E%3C/svg%3E" 
+               alt="Sala de formación con personas con discapacidad aprendiendo informática, diseño gráfico y habilidades laborales">
+        </figure>
+        <h3>Talleres de Formación y Empleabilidad</h3>
+        <p><strong>Temáticas:</strong> Informática accesible, redes sociales, currículum y entrevistas, emprendimiento | <strong>Formato:</strong> Presencial y online | 4 ediciones al año con certificado de participación. Impartidos por profesionales con experiencia en inclusión laboral. Materiales en formatos accesibles.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios">
+    <h2>Testimonios de Nuestra Comunidad</h2>
+    <div class="testimonials">
+      <article class="testimonial">
+        <blockquote>
+          <p>"Gracias a AccesiVigo pude estudiar Ingeniería Informática con todas las adaptaciones que necesitaba. El apoyo de los técnicos y el préstamo de lectores de pantalla fueron fundamentales para mi éxito académico."</p>
+          <footer>
+            <cite>— Ana Martínez, Graduada en Ingeniería Informática (Discapacidad visual)</cite>
+          </footer>
+        </blockquote>
+      </article>
+      <article class="testimonial">
+        <blockquote>
+          <p>"El servicio de intérpretes de lengua de señas en las clases me permitió seguir mi carrera sin problemas. Además, participé en el programa deportivo de goalball y conocí a muchísima gente. Me siento parte de la universidad."</p>
+          <footer>
+            <cite>— Carlos Vidal, Estudiante de Derecho (Discapacidad auditiva)</cite>
+          </footer>
+        </blockquote>
+      </article>
+      <article class="testimonial">
+        <blockquote>
+          <p>"La accesibilidad del campus ha mejorado muchísimo. Todas las aulas son accesibles, los baños adaptados están bien señalizados, y siempre hay alguien dispuesto a ayudar. AccesiVigo hace que la universidad sea para todos."</p>
+          <footer>
+            <cite>— Laura Fernández, Estudiante de Fisioterapia (Discapacidad motriz)</cite>
+          </footer>
+        </blockquote>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>Si eres estudiante, personal o familiar y necesitas información sobre nuestros servicios de apoyo, no dudes en contactarnos:</p>
+        <ul class="contact-methods">
+          <li>
+            <strong>Teléfono:</strong> 
+            <a href="tel:+34986812000">+34 986 812 000</a> (Ext. 1234)
+          </li>
+          <li>
+            <strong>Email:</strong> 
+            <a href="mailto:accesivigo@uvigo.es">accesivigo@uvigo.es</a>
+          </li>
+          <li>
+            <strong>Whatsapp:</strong> 
+            <a href="https://wa.me/34986812000">+34 986 812 000</a>
+          </li>
+          <li>
+            <strong>Dirección:</strong> 
+            Edificio Servizos Centrais, Campus Lagoas-Marcosende, 36310 Vigo
+          </li>
+          <li>
+            <strong>Horario de atención:</strong> Lunes a Viernes, 9:00 - 14:00 y 16:00 - 18:00
+          </li>
+        </ul>
+        <figure class="contact-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%2328a745' width='400' height='300'/%3E%3Ctext x='50%25' y='40%25' text-anchor='middle' fill='white' font-size='24' font-family='Arial' font-weight='bold'%3EOficina AccesiVigo%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='18' font-family='Arial'%3EUniversidad de Vigo%3C/text%3E%3C/svg%3E" 
+               alt="Oficina de AccesiVigo en campus universitario con entrada accesible, rampa, señalización clara y espacio diáfano">
+          <figcaption>Nuestra oficina es totalmente accesible, ven a visitarnos</figcaption>
+        </figure>
+      </div>
+      <form id="contact-form" novalidate>
+        <fieldset>
+          <legend>Formulario de Contacto</legend>
+          <div class="form-group">
+            <label for="nombre">Nombre completo <span aria-label="obligatorio">*</span></label>
+            <input type="text" id="nombre" name="nombre" required 
+                   aria-required="true" 
+                   aria-describedby="nombre-hint">
+            <span id="nombre-hint" class="hint">Escriba su nombre y apellidos</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico <span aria-label="obligatorio">*</span></label>
+            <input type="email" id="email" name="email" required 
+                   aria-required="true"
+                   aria-describedby="email-hint">
+            <span id="email-hint" class="hint">ejemplo@alumnos.uvigo.es</span>
+          </div>
+          <div class="form-group">
+            <label for="tipo-usuario">Tipo de usuario</label>
+            <select id="tipo-usuario" name="tipo-usuario" aria-describedby="tipo-hint">
+              <option value="">Seleccione una opción</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="futuro-estudiante">Futuro estudiante</option>
+              <option value="personal">Personal UVigo</option>
+              <option value="familiar">Familiar</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span id="tipo-hint" class="hint">Seleccione su relación con la universidad</span>
+          </div>
+          <div class="form-group">
+            <label for="motivo">Motivo de consulta</label>
+            <select id="motivo" name="motivo" aria-describedby="motivo-hint">
+              <option value="">Seleccione una opción</option>
+              <option value="informacion">Información general</option>
+              <option value="apoyo-academico">Apoyo académico</option>
+              <option value="tecnologias">Tecnologías de asistencia</option>
+              <option value="voluntariado">Programa de voluntariado</option>
+              <option value="actividades">Actividades y eventos</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span id="motivo-hint" class="hint">Seleccione el tipo de consulta</span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" 
+                      aria-describedby="mensaje-hint"></textarea>
+            <span id="mensaje-hint" class="hint">Cuéntenos cómo podemos ayudarle</span>
+          </div>
+          <button type="submit">Enviar mensaje</button>
+          <p id="form-status" aria-live="polite" aria-atomic="true"></p>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <img src="logo_pie_fcetou.png" alt="Logo Universidad de Vigo - Facultad de Ciencias Empresariales y Turismo de Ourense" class="footer-logo">
+    <p>© 2026 AccesiVigo - Proyecto de Accesibilidad e Inclusión | Universidad de Vigo</p>
+    <p><small>Esta página cumple con las normas WCAG 2.1 nivel AA | Colaboran</small></p>
+  </div>
+</footer>
+
+</body>
+</html>
