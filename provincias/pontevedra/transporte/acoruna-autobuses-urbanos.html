@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autobuses Urbanos de A Coruña | AccesiVigo</title>
+  <meta name="description" content="Guía de autobuses urbanos de A Coruña: accesibilidad, tarifas, tecnología, confort y datos de contacto de la Compañía de Tranvías.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1rem;
+    }
+
+    .info-card {
+      border: 1px solid #d8dee6;
+      border-radius: 0.6rem;
+      padding: 1rem;
+      background: #fff;
+    }
+
+    .tarifas-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.75rem;
+      background: #fff;
+    }
+
+    .tarifas-table caption {
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .tarifas-table th,
+    .tarifas-table td {
+      border: 1px solid #cfd8e3;
+      padding: 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .tarifas-table th {
+      background: #edf4fb;
+    }
+
+    .feature-visual {
+      margin-top: 0.75rem;
+    }
+
+    .feature-visual img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.6rem;
+      border: 1px solid #d8dee6;
+    }
+
+    .feature-visual--small img {
+      max-width: 30rem;
+    }
+
+    .feature-visual--routes img {
+      max-width: 32rem;
+    }
+
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .info-card--asientos p {
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-content">
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div class="header-branding">
+          <a href="../../../index.html" class="logo-link">
+            <span class="logo">AccesiVigo</span>
+            <span class="tagline">Turismo accesible en Galicia</span>
+          </a>
+        </div>
+        <div class="header-navigation">
+          <div data-menu-container data-menu-src="../../../partials/main-menu.html" data-menu-base="../../../" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <nav aria-label="Ruta de navegación" class="breadcrumb-nav">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../../index.html">Inicio</a></li>
+          <li><a href="../../../index.html#coruna-autobus-urbano">A Coruña</a></li>
+          <li><a href="../../../index.html#coruna-autobus-urbano">Transporte</a></li>
+          <li aria-current="page">Autobuses Urbanos</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="hotel-hero" aria-labelledby="bus-title">
+      <div class="container">
+        <div class="hotel-header">
+          <div class="hotel-title-group">
+            <h1 id="bus-title">Autobuses Urbanos de A Coruña</h1>
+            <p class="hotel-location">Movilidad y accesibilidad para toda la ciudadanía</p>
+          </div>
+          <div class="hotel-quick-actions">
+            <a class="btn btn-primary" href="tel:+34981184200">Tarjeta Millennium: 981 184 200</a>
+            <a class="btn btn-secondary" href="https://www.tranviascoruna.com" target="_blank" rel="noopener noreferrer" aria-label="Abrir la web de la Compañía de Tranvías de La Coruña, se abre en una nueva pestaña">Web oficial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hotel-content">
+      <div class="container">
+        <section class="hotel-section" aria-labelledby="movilidad-accesibilidad">
+          <h2 id="movilidad-accesibilidad">Movilidad y Accesibilidad</h2>
+          <div class="section-content">
+            <div class="info-grid">
+              <article class="info-card">
+                <h3>Compañía operadora</h3>
+                <p>Compañía de Tranvías de La Coruña.</p>
+              </article>
+              <article class="info-card">
+                <h3>Atención al cliente</h3>
+                <p>Soporte a través de página web y atención directa.</p>
+              </article>
+              <article class="info-card">
+                <h3>Ayuda y accesibilidad</h3>
+                <p>Servicio garantizado para todos los ciudadanos.</p>
+              </article>
+              <article class="info-card">
+                <h3>Contacto Tarjeta Millennium</h3>
+                <p><a href="tel:+34981184200">981 184 200</a></p>
+              </article>
+            </div>
+            <figure class="feature-visual feature-visual--routes">
+              <img src="../../../imagenes/acoruna/transportes/rutas.jpeg" alt="Parada de autobús urbano con panel de rutas y tiempos de llegada en A Coruña">
+              <figcaption>Consulta de rutas y tiempos para planificar desplazamientos.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="motor-ciudad">
+          <h2 id="motor-ciudad">El motor de nuestra ciudad</h2>
+          <div class="section-content">
+            <ul class="info-list">
+              <li><strong>Eje vertebrador:</strong> El autobús urbano es el sistema vertebral del transporte público terrestre en la ciudad de A Coruña.</li>
+              <li><strong>Modernización continua:</strong> Destaca por su constante evolución y su fuerte compromiso con el acceso igualitario de los ciudadanos.</li>
+              <li><strong>Seguridad garantizada:</strong> Toda la flota está equipada con sistemas de seguridad avanzados (EBS, ABS y ASR) para asegurar un viaje tranquilo y sin sobresaltos.</li>
+            </ul>
+            <figure class="feature-visual">
+              <img src="../../../imagenes/acoruna/transportes/autobus.jpeg" alt="Autobús urbano de A Coruña en servicio por el centro de la ciudad">
+              <figcaption>Sistema urbano que articula la movilidad diaria en A Coruña.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="accesibilidad">
+          <h2 id="accesibilidad">Accesibilidad</h2>
+          <div class="section-content">
+            <ul class="info-list">
+              <li><strong>Certificación de calidad:</strong> Cumplimiento riguroso de la norma de accesibilidad universal UNE 170001-2 (AENOR).</li>
+              <li><strong>Acceso físico integral:</strong> Vehículos de piso bajo continuo sin escalones y rampa telescópica automatizada con botón de solicitud exterior.</li>
+              <li><strong>Interior adaptado:</strong> Plataforma central reservada y asientos específicos diseñados para Personas con Movilidad Reducida (PMR).</li>
+              <li><strong>Discapacidad sensorial:</strong> Sistemas integrados de aviso acústico y visual, pulsadores con relieve Braille y acceso permitido a perros de asistencia.</li>
+            </ul>
+            <figure class="feature-visual">
+              <img src="../../../imagenes/acoruna/transportes/accesibilidad.jpeg" alt="Interior de autobús urbano con espacio reservado para personas con movilidad reducida">
+              <figcaption>Diseño orientado a la accesibilidad universal.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="resenas">
+          <h2 id="resenas">Reseñas</h2>
+          <div class="section-content">
+            <p><strong>Puntuación global:</strong> 7,5 / 10</p>
+            <p><strong>Valoración:</strong> ¡Fantástico!</p>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="tarifas">
+          <h2 id="tarifas">Muévete al mejor precio</h2>
+          <div class="section-content">
+            <p>Tarifas especiales utilizando la Tarjeta Millennium o la app oficial.</p>
+            <table class="tarifas-table">
+              <caption>Tarifas de Autobuses Urbanos de A Coruña</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tipo de billete / tarifa especial</th>
+                  <th scope="col">Precio por viaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Billete ordinario (sin bono o tarjeta)</th>
+                  <td>1,30€</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarifa general (con Tarjeta Millennium)</th>
+                  <td>0,45€</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarifa joven (15 a 30 años)</th>
+                  <td>0,38€</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarifa universitaria</th>
+                  <td>0,15€</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarifa social</th>
+                  <td>0,12€</td>
+                </tr>
+                <tr>
+                  <th scope="row">Menores de 15 años</th>
+                  <td>Totalmente gratuito</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="tecnologia-exterior">
+          <h2 id="tecnologia-exterior">Tecnología y comodidad exterior</h2>
+          <div class="section-content">
+            <ul class="info-list">
+              <li><strong>Letreros electrónicos LED:</strong> Alta visibilidad diurna y nocturna con números policromáticos y letras en color ámbar para identificación rápida de línea.</li>
+              <li><strong>Sistema kneeling (arrodillamiento):</strong> Suspensión neumática que inclina el autobús hacia la acera para facilitar una entrada cómoda.</li>
+              <li><strong>Plataformas de pago digital:</strong> Sistema automatizado por código QR y validación sin contacto (contactless).</li>
+              <li><strong>Seguridad reforzada:</strong> Videovigilancia integral y conteo de pasajeros en vehículos de nueva adquisición.</li>
+            </ul>
+            <figure class="feature-visual feature-visual--small">
+              <img src="../../../imagenes/acoruna/transportes/tecnologia.jpeg" alt="Panel frontal de autobús urbano con letrero LED y sistema de pago digital">
+              <figcaption>Innovación tecnológica aplicada al servicio urbano.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="confort-trayecto">
+          <h2 id="confort-trayecto">Confort durante el trayecto</h2>
+          <div class="section-content">
+            <div class="fleet-grid">
+              <article class="info-card">
+                <h3>Climatización integral</h3>
+                <p>Equipamiento con aire acondicionado integral o sistema delantero independiente para mantener una temperatura óptima en cualquier estación del año.</p>
+                <img src="../../../imagenes/acoruna/transportes/climatizacion.jpeg" alt="Sistema de climatización interior en autobús urbano de A Coruña">
+              </article>
+              <article class="info-card">
+                <h3>Información a bordo</h3>
+                <p>Pantallas audiovisuales integradas que anuncian próximas paradas, transbordos posibles y avisos relevantes del servicio.</p>
+                <img src="../../../imagenes/acoruna/transportes/informacion-a-bordo.jpeg" alt="Pantalla informativa interior con próximas paradas en autobús urbano">
+              </article>
+              <article class="info-card">
+                <h3>Seguridad interior</h3>
+                <p>Asideros ergonómicos de alta visibilidad y barras de sujeción distribuidas estratégicamente para viajeros de pie.</p>
+                <img src="../../../imagenes/acoruna/transportes/seguridad-interior.jpeg" alt="Asideros y barras de sujeción en el interior de un autobús urbano">
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="flota">
+          <h2 id="flota">Flota: estándar y articulados</h2>
+          <div class="section-content">
+            <div class="fleet-grid">
+              <article class="info-card">
+                <h3>Autobús estándar (12 metros)</h3>
+                <ul class="info-list">
+                  <li>Hasta 33 plazas sentadas.</li>
+                  <li>Hasta 67 pasajeros de pie.</li>
+                  <li>1 espacio reservado para silla de ruedas (PMR).</li>
+                </ul>
+                <img src="../../../imagenes/acoruna/transportes/autobus-estandar.jpeg" alt="Autobús urbano estándar de 12 metros de la red de A Coruña">
+              </article>
+              <article class="info-card">
+                <h3>Autobús articulado (18 metros)</h3>
+                <ul class="info-list">
+                  <li>Diseñado para rutas de alta demanda.</li>
+                  <li>Hasta 42 plazas sentadas y 102 de pie.</li>
+                  <li>2 espacios completos para PMR o carritos de bebé.</li>
+                </ul>
+                <img src="../../../imagenes/acoruna/transportes/autobus-articulado.jpeg" alt="Autobús articulado de 18 metros con gran capacidad para transporte urbano">
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="hotel-section" aria-labelledby="inclusion-total">
+          <h2 id="inclusion-total">Diseñados para la inclusión total</h2>
+          <div class="section-content">
+            <div class="fleet-grid">
+              <article class="info-card">
+                <h3>Acceso exterior seguro</h3>
+                <p>Botón azul iluminado con símbolo de silla de ruedas junto a la puerta central para solicitar el despliegue automático de la rampa.</p>
+                <img src="../../../imagenes/acoruna/transportes/acceso-exterior-seguro.jpeg" alt="Botón exterior de solicitud de rampa para personas con movilidad reducida">
+              </article>
+              <article class="info-card">
+                <h3>Plataforma PMR protegida</h3>
+                <p>Zona central diáfana con acolchado lumbar, cinturón de seguridad y barra de sujeción especializada para anclajes seguros.</p>
+                <img src="../../../imagenes/acoruna/transportes/plataforma-pmr-protegida.jpeg" alt="Plataforma central del autobús adaptada para personas con movilidad reducida">
+              </article>
+              <article class="info-card info-card--asientos">
+                <h3>Asientos reservados</h3>
+                <p>Plazas de acceso rápido en parte delantera, con tapicería diferenciada y espacio extra para las piernas.</p>
+                <img src="../../../imagenes/acoruna/transportes/asientos-reservados.jpeg" alt="Asientos reservados de acceso preferente en la parte delantera del autobús">
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-labelledby="footer-title">
+    <div class="container">
+      <h2 id="footer-title" class="sr-only">Información del sitio</h2>
+      <img src="../../../imagenes/footer.png" alt="Logo Universidad de Vigo - Facultad de Ciencias Empresariales y Turismo de Ourense" class="footer-logo">
+      <p>&copy; 2026 AccesiVigo - Turismo accesible en Galicia. Universidad de Vigo.</p>
+      <p>Desarrollado con compromiso por la accesibilidad e inclusión (WCAG 2.1 AA).</p>
+    </div>
+  </footer>
+
+
+  <script src="../../../js/menu-interactions.js"></script>
+  <script src="../../../js/menu-loader.js"></script>
+</body>
+</html>

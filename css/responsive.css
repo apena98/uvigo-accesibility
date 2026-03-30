@@ -450,7 +450,7 @@
 
   .card-image {
     flex: 0 0 auto;
-    height: 160px;
+    height: auto;
   }
 
   .hero-section {

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Garza Restaurante - Ourense | AccesiVigo</title>
+  <meta name="description" content="Ficha accesible de La Garza Restaurante en Ourense: ubicaci&oacute;n, contacto, horarios, accesibilidad, rese&ntilde;as, precios y platos.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    /* ===== Horarios ===== */
+    .horario-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0;
+      max-width: 30rem;
+    }
+
+    .horario-grid .horario-header {
+      font-weight: 700;
+      padding: 0.75rem 2rem 0.75rem 0;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .horario-grid dt,
+    .horario-grid dd {
+      margin: 0;
+      padding: 0.65rem 2rem 0.65rem 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .horario-grid dd {
+      padding-right: 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ===== Galería platos ===== */
+    .platos-gallery .gallery-item img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-content">
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir men&uacute; de navegaci&oacute;n">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div class="header-branding">
+          <a href="../../../index.html" class="logo-link">
+            <span class="logo">AccesiVigo</span>
+            <span class="tagline">Turismo accesible en Galicia</span>
+          </a>
+        </div>
+        <div class="header-navigation">
+          <div data-menu-container data-menu-src="../../../partials/main-menu.html" data-menu-base="../../../" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <nav aria-label="Ruta de navegaci&oacute;n" class="breadcrumb-nav">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../../index.html">Inicio</a></li>
+          <li><a href="../../../provincias/ourense/index.html">Ourense</a></li>
+          <li><a href="../../../provincias/ourense/index.html#ourense-rest-bares">Restaurantes y bares</a></li>
+          <li aria-current="page">La Garza Restaurante</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="hotel-hero" aria-labelledby="lagarza-title">
+      <div class="container">
+        <div class="hotel-header">
+          <div class="hotel-title-group">
+            <h1 id="lagarza-title">La Garza Restaurante</h1>
+            <p class="hotel-location">R&uacute;a Arturo P&eacute;rez Serantes, 3, 32004 Ourense, Espa&ntilde;a</p>
+            <p><strong><span aria-hidden="true">&#128338;</span> Abierto hasta las 0:00</strong></p>
+          </div>
+          <div class="hotel-quick-actions">
+            <a class="btn btn-primary" href="tel:+34988245600">Llamar: +34 988 24 56 00</a>
+            <a class="btn btn-secondary" href="https://maps.app.goo.gl/fyhp7whefjV2jRWS6" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicaci&oacute;n de La Garza en Google Maps, se abre en una nueva pesta&ntilde;a">C&oacute;mo llegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hotel-content">
+      <div class="container">
+
+        <!-- Sobre el restaurante -->
+        <section class="hotel-section" aria-labelledby="lagarza-sobre">
+          <h2 id="lagarza-sobre"><span aria-hidden="true">&#127869;&#65039;</span> Sobre el restaurante</h2>
+          <div class="section-content">
+            <p>Restaurante moderno con platos creativos de pasta, pescado y marisco, as&iacute; como panes bao, tacos y postres.</p>
+            <p>El restaurante se encuentra a 15 minutos caminando del centro comercial y a 30 minutos de la estaci&oacute;n, pero est&aacute; cerca de la zona vieja de la ciudad.</p>
+            <figure>
+              <img src="../../../imagenes/ourense/restauracion/la-garza.jpeg" alt="Vista exterior del restaurante La Garza en Ourense, con acceso desde la calle y fachada principal">
+              <figcaption>Fachada del restaurante La Garza.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Horarios -->
+        <section class="hotel-section" aria-labelledby="lagarza-horarios">
+          <h2 id="lagarza-horarios"><span aria-hidden="true">&#128338;</span> Horarios</h2>
+          <div class="section-content">
+            <dl class="horario-grid" aria-label="Horario semanal de La Garza Restaurante">
+              <span class="horario-header" role="presentation">D&iacute;a</span>
+              <span class="horario-header" role="presentation">Horario</span>
+
+              <dt>Domingo</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;17:00</dd>
+
+              <dt>Lunes</dt>
+              <dd>Cerrado</dd>
+
+              <dt>Martes</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;0:00</dd>
+
+              <dt>Mi&eacute;rcoles</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;0:00</dd>
+
+              <dt>Jueves</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;0:00</dd>
+
+              <dt>Viernes</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;0:00</dd>
+
+              <dt>S&aacute;bado</dt>
+              <dd>10:00&nbsp;&ndash;&nbsp;0:00</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- Accesibilidad -->
+        <section class="hotel-section" aria-labelledby="lagarza-accesibilidad">
+          <h2 id="lagarza-accesibilidad"><span aria-hidden="true">&#9855;</span> Accesibilidad</h2>
+          <div class="section-content">
+            <ul class="info-list">
+              <li><span aria-hidden="true">&#9855;</span> Cuenta con entrada accesible para sillas de ruedas, garantizando el acceso a personas con movilidad reducida.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Rese&ntilde;as -->
+        <section class="hotel-section" aria-labelledby="lagarza-resenas">
+          <h2 id="lagarza-resenas"><span aria-hidden="true">&#128172;</span> Rese&ntilde;as</h2>
+          <div class="section-content">
+            <article class="review">
+              <div class="review-header">
+                <strong class="review-author"><span aria-hidden="true">&#11088;</span> James Sosa</strong>
+              </div>
+              <blockquote>
+                <p>La comida estuvo muy bien, el trato de las camareras fue excelente. El &uacute;nico &ldquo;pero&rdquo; es que no nos sirvieron a todos a la vez: primero le sirvieron la comida a uno de mis amigos mientras que a los dem&aacute;s nos toc&oacute; esperar unos 10 minutos. Esto es algo que no puede suceder.</p>
+              </blockquote>
+              <p><strong>Comida:</strong> 5/5 &nbsp;|&nbsp; <strong>Servicio:</strong> 4/5 &nbsp;|&nbsp; <strong>Ambiente:</strong> 4/5</p>
+            </article>
+            <article class="review">
+              <div class="review-header">
+                <strong class="review-author"><span aria-hidden="true">&#11088;</span> Laura Mameli</strong>
+              </div>
+              <blockquote>
+                <p>El servicio excelente por parte de las chicas que nos atendieron, muy educadas. La comida era muy buena y los platos abundantes &mdash; compartimos todo y nos quedamos llenos. El ambiente, acogedor. Por decir algo malo, lo &uacute;nico que no me convenci&oacute; fue el cheesecake: estoy acostumbrada a otras consistencias, era bastante espumoso, aunque creo que son gustos.</p>
+              </blockquote>
+              <p><strong>Comida:</strong> 4/5 &nbsp;|&nbsp; <strong>Servicio:</strong> 5/5 &nbsp;|&nbsp; <strong>Ambiente:</strong> 4/5</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Precios -->
+        <section class="hotel-section" aria-labelledby="lagarza-precios">
+          <h2 id="lagarza-precios"><span aria-hidden="true">&#128182;</span> Precios</h2>
+          <div class="section-content">
+            <ul class="info-list">
+              <li><strong>Rango de precio:</strong> 20&ndash;30&nbsp;&euro; por persona.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Qu&eacute; ofrece -->
+        <section class="hotel-section" aria-labelledby="lagarza-servicios">
+          <h2 id="lagarza-servicios"><span aria-hidden="true">&#10024;</span> Qu&eacute; ofrece</h2>
+          <div class="section-content">
+            <h3>Servicios disponibles</h3>
+            <ul class="amenities-grid">
+              <li class="amenity-item"><span aria-hidden="true">&#9855;</span> Acceso para discapacitados</li>
+              <li class="amenity-item"><span aria-hidden="true">&#128179;</span> Acepta tarjetas de cr&eacute;dito</li>
+              <li class="amenity-item"><span aria-hidden="true">&#127359;&#65039;</span> Aparcamiento en la calle</li>
+              <li class="amenity-item"><span aria-hidden="true">&#127864;</span> Bar completo</li>
+              <li class="amenity-item"><span aria-hidden="true">&#128101;</span> Capacidad</li>
+              <li class="amenity-item"><span aria-hidden="true">&#128241;</span> Pagos digitales</li>
+              <li class="amenity-item"><span aria-hidden="true">&#128197;</span> Reservas</li>
+              <li class="amenity-item"><span aria-hidden="true">&#127869;&#65039;</span> Servicio de mesa</li>
+              <li class="amenity-item"><span aria-hidden="true">&#127863;</span> Sirve alcohol</li>
+              <li class="amenity-item"><span aria-hidden="true">&#129681;</span> Tronas disponibles</li>
+              <li class="amenity-item"><span aria-hidden="true">&#127866;</span> Vino y cerveza</li>
+              <li class="amenity-item"><span aria-hidden="true">&#128246;</span> Wifi gratuito</li>
+            </ul>
+            <h3>Cocina y men&uacute;</h3>
+            <ul class="info-list">
+              <li><strong>Tipo de cocina:</strong> Internacional, Mediterr&aacute;nea, Espa&ntilde;ola, Contempor&aacute;nea.</li>
+              <li><strong>Tipos de comidas:</strong> Comidas, cenas, abierto hasta tarde, bebidas.</li>
+              <li><strong>Dietas especiales:</strong> Opciones veganas y opciones sin gluten.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Platos -->
+        <section class="hotel-section" aria-labelledby="lagarza-platos">
+          <h2 id="lagarza-platos"><span aria-hidden="true">&#129368;</span> Platos</h2>
+          <div class="section-content">
+            <p>Selecci&oacute;n de platos destacados del restaurante.</p>
+            <div class="photo-gallery platos-gallery">
+              <figure class="gallery-item">
+                <img src="../../../imagenes/ourense/restauracion/carrilleras.jpg" alt="Carrilleras de cerdo glaseadas con salsa de vino tinto, servidas con pur&eacute; de patatas y verduras asadas">
+                <figcaption>
+                  <strong>Carrilleras de cerdo</strong>
+                  <p>Carrilleras de cerdo glaseadas con salsa de vino tinto, servidas con pur&eacute; de patatas y verduras asadas.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../../../imagenes/ourense/restauracion/parrillada-vegetal.jpg" alt="Parrillada vegetal con variedad de verduras asadas, presentada en un plato grande">
+                <figcaption>
+                  <strong>Parrillada vegetal</strong>
+                  <p>Variedad de verduras asadas, presentada en un plato grande.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../../../imagenes/ourense/restauracion/cheesecake.jpeg" alt="Cheesecake con base de galleta, relleno de queso cremoso y cobertura de frutos rojos, servido en un plato blanco">
+                <figcaption>
+                  <strong>Cheesecake</strong>
+                  <p>Tarta de queso cremosa con coulis de frutos rojos.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../../../imagenes/ourense/restauracion/ensalada-burrata.jpeg" alt="Ensalada de burrata con tomates cherry y albahaca fresca">
+                <figcaption>
+                  <strong>Ensalada de burrata</strong>
+                  <p>Burrata fresca con tomates cherry, albahaca y aceite de oliva virgen extra.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../../../imagenes/ourense/restauracion/entrecot.jpeg" alt="Entrecot a la parrilla con guarnición de verduras">
+                <figcaption>
+                  <strong>Entrecot</strong>
+                  <p>Entrecot a la parrilla acompañado de verduras asadas y salsa especial.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- C&oacute;mo llegar y contacto -->
+        <section class="hotel-section" aria-labelledby="lagarza-contacto">
+          <h2 id="lagarza-contacto"><span aria-hidden="true">&#128205;</span> C&oacute;mo llegar y contacto</h2>
+          <div class="section-content">
+            <h3><span aria-hidden="true">&#128506;&#65039;</span> C&oacute;mo llegar</h3>
+            <p><strong>Direcci&oacute;n:</strong> R&uacute;a Arturo P&eacute;rez Serantes, 3, 32004 Ourense, Espa&ntilde;a.</p>
+            <p><a class="btn btn-map" href="https://maps.app.goo.gl/fyhp7whefjV2jRWS6" target="_blank" rel="noopener noreferrer" aria-label="Abrir ruta a La Garza Restaurante en Google Maps, se abre en una nueva pesta&ntilde;a">Abrir ruta en Google Maps</a></p>
+            <h3><span aria-hidden="true">&#128222;</span> Contacto</h3>
+            <ul class="contact-methods">
+              <li><strong>Ayuda:</strong> <a href="tel:+34988245600">+34 988 24 56 00</a></li>
+              <li><strong>Reservas:</strong> <a href="tel:+34988245600">+34 988 24 56 00</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-labelledby="footer-title">
+    <div class="container">
+      <h2 id="footer-title" class="sr-only">Informaci&oacute;n del sitio</h2>
+      <img src="../../../imagenes/footer.png" alt="Logo Universidad de Vigo - Facultad de Ciencias Empresariales y Turismo de Ourense" class="footer-logo">
+      <p>&copy; 2026 AccesiVigo &mdash; Turismo accesible en Galicia. Universidad de Vigo.</p>
+      <p>Desarrollado con compromiso por la accesibilidad e inclusi&oacute;n (WCAG 2.1 AA).</p>
+    </div>
+  </footer>
+
+  <script src="../../../js/menu-interactions.js"></script>
+  <script src="../../../js/menu-loader.js"></script>
+</body>
+</html>
