@@ -1,0 +1,474 @@
+/* ===== HEADER & NAVIGATION ===== */
+
+header.site-header {
+  background: #fff;
+  border-bottom: 3px solid var(--primary-color);
+  padding: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow: visible;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  max-height: 100vh;
+}
+
+header .container {
+  position: relative;
+}
+
+/* Layout del header: logo a la izquierda, nav a la derecha */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.header-branding {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.header-navigation {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botón hamburguesa para móvil */
+.menu-toggle {
+  display: none;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.4rem;
+  cursor: pointer;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 501;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.menu-icon {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-icon span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Animación del botón hamburguesa cuando está activo */
+.menu-toggle.active .menu-icon span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-toggle.active .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .menu-icon span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* Logo y tagline */
+header .logo {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--cassiopeia-font-family-headings);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  text-decoration: none;
+}
+
+.logo-link .logo {
+  display: block;
+}
+
+header .tagline {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+/* Menú principal */
+header .menu {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .menu li {
+  margin: 0;
+  position: relative;
+}
+
+header .menu li a,
+header .menu li button {
+  color: var(--dark-text);
+  padding: 0.7rem 1.1rem;
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-left: 1px solid var(--border-color);
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  white-space: nowrap;
+}
+
+header .menu > li:first-child > a,
+header .menu > li:first-child > button {
+  border-left: none;
+  padding-left: 1.1rem;
+}
+
+header .menu li a:hover,
+header .menu li a:focus,
+header .menu li button:hover,
+header .menu li button:focus {
+  color: #fff;
+  background: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+header .menu li a:focus-visible,
+header .menu li button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+header .menu li a[aria-current="page"] {
+  color: var(--secondary-color);
+  font-weight: 600;
+  background: transparent;
+}
+
+/* Botones de menú con dropdown */
+header .menu .menu-item-has-children > button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+header .menu .dropdown-icon {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+header .menu button[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Submenús - Nivel 2 */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 0.3rem 0 0 0;
+  padding: 0.4rem 0;
+  min-width: 280px;
+  max-width: 320px;
+  z-index: 1000;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+header .menu li:nth-child(n+3).menu-item-has-children .submenu {
+  left: auto;
+  right: 0;
+}
+
+.submenu[hidden] {
+  display: none;
+}
+
+.submenu li {
+  margin: 0;
+  border-bottom: none;
+  padding: 0;
+  list-style: none;
+}
+
+.submenu li:first-child {
+  margin-top: 0;
+}
+
+.submenu a {
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--dark-text);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  margin: 0;
+  text-align: left;
+  min-height: 44px;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  background: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.submenu a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+/* Botones del segundo nivel del submenú */
+.submenu-item-has-children > button {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-text);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: left;
+  margin: 0;
+  min-height: 44px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.submenu-item-has-children > button:hover,
+.submenu-item-has-children > button:focus {
+  color: #fff;
+  background: var(--secondary-color);
+  text-decoration: none;
+  outline: none;
+}
+
+.submenu-item-has-children > button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+.dropdown-icon-sub {
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+/* Rotar icono cuando submenú está abierto */
+.submenu-item-has-children > button[aria-expanded="true"] .dropdown-icon-sub {
+  transform: rotate(90deg);
+}
+
+/* Tercer nivel: sub-submenús */
+.submenu-2 {
+  position: static;
+  background: #eef3f8;
+  border: none;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0;
+  box-shadow: none;
+  list-style: none;
+  margin: 0;
+  padding: 0.2rem 0;
+  min-width: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+.submenu-2[hidden] {
+  display: none;
+}
+
+.submenu-2 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: none;
+}
+
+.submenu-2 a {
+  padding: 0.6rem 1.2rem 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--dark-text);
+  font-size: 0.92rem;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  margin: 0;
+  text-align: left;
+  min-height: 40px;
+}
+
+.submenu-2 a:hover,
+.submenu-2 a:focus {
+  color: #fff;
+  background: #005aa0;
+  text-decoration: none;
+  outline: none;
+}
+
+.submenu-2 a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+/* Botones nivel 3 dentro de submenu-2 */
+.submenu3-item-has-children > button {
+  width: 100%;
+  padding: 0.6rem 1.2rem 0.6rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-text);
+  font-size: 0.92rem;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: left;
+  margin: 0;
+  min-height: 40px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.submenu3-item-has-children > button:hover,
+.submenu3-item-has-children > button:focus {
+  color: #fff;
+  background: #005aa0;
+  text-decoration: none;
+  outline: none;
+}
+
+.submenu3-item-has-children > button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+.submenu3-item-has-children > button[aria-expanded="true"] .dropdown-icon-sub {
+  transform: rotate(90deg);
+}
+
+/* Cuarto nivel: sub-sub-submenús */
+.submenu-3 {
+  position: static;
+  background: #e8edf3;
+  border: none;
+  border-left: 3px solid var(--secondary-color);
+  list-style: none;
+  margin: 0;
+  padding: 0.2rem 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.submenu-3[hidden] {
+  display: none;
+}
+
+.submenu-3 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.submenu-3 a {
+  padding: 0.5rem 1.2rem 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--dark-text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  margin: 0;
+  text-align: left;
+  min-height: 38px;
+}
+
+.submenu-3 a:hover,
+.submenu-3 a:focus {
+  color: #fff;
+  background: var(--secondary-color);
+  text-decoration: none;
+  outline: none;
+}
+
+.submenu-3 a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}

@@ -1,0 +1,131 @@
+/* ===== FORMS ===== */
+
+/* Contacto */
+.contact-content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.contact-info {
+  flex: 1 1 400px;
+}
+
+.contact-methods {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.contact-methods li {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.contact-methods a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-methods a:hover,
+.contact-methods a:focus {
+  text-decoration: underline;
+}
+
+.contact-image {
+  margin-top: 2rem;
+}
+
+/* Formulario */
+form {
+  max-width: 600px;
+  flex: 1 1 500px;
+}
+
+fieldset {
+  border: 2px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group label span[aria-label="obligatorio"] {
+  color: #d00;
+}
+
+.hint {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 0.7rem 0.8rem;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--secondary-color);
+  outline: 2px solid rgba(0, 115, 207, 0.2);
+  outline-offset: 0;
+}
+
+input[aria-invalid="true"], 
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+button {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.2s ease;
+  padding: 0.8rem 2rem;
+}
+
+button:hover, button:focus {
+  background: var(--primary-color);
+  filter: none;
+  transform: none;
+  box-shadow: none;
+}
+
+#form-status {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#form-status:empty {
+  display: none;
+}
