@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -99,51 +99,7 @@
           </a>
         </div>
         <div class="header-navigation">
-          <nav aria-label="Menú principal" id="main-menu">
-            <ul class="menu">
-              <li class="menu-item-has-children">
-                <button type="button" aria-expanded="false" aria-controls="submenu-ourense" aria-haspopup="true">
-                  Ourense
-                  <span class="dropdown-icon" aria-hidden="true">▼</span>
-                </button>
-                <ul id="submenu-ourense" class="submenu" hidden>
-                  <li><a href="../../../provincias/ourense/index.html#ourense-que-visitar">Qué visitar</a></li>
-                  <li><a href="../../../provincias/ourense/index.html#ourense-que-hacer">Qué hacer</a></li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <button type="button" aria-expanded="false" aria-controls="submenu-pontevedra" aria-haspopup="true">
-                  Pontevedra
-                  <span class="dropdown-icon" aria-hidden="true">▼</span>
-                </button>
-                <ul id="submenu-pontevedra" class="submenu" hidden>
-                  <li><a href="../../../index.html#pontevedra-que-visitar">Qué visitar</a></li>
-                  <li><a href="../../../index.html#pontevedra-que-hacer">Qué hacer</a></li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <button type="button" aria-expanded="false" aria-controls="submenu-coruna" aria-haspopup="true">
-                  A Coruña
-                  <span class="dropdown-icon" aria-hidden="true">▼</span>
-                </button>
-                <ul id="submenu-coruna" class="submenu" hidden>
-                  <li><a href="../../../index.html#coruna-que-visitar">Qué visitar</a></li>
-                  <li><a href="../../../provincias/coruña/que-hacer/acoruna-teatro-principal-santiago.html">Qué hacer</a></li>
-                  <li><a href="../../../provincias/coruña/otros/acoruna-chus.html">Otros</a></li>
-                  <li><a href="../../../provincias/coruña/transportes/acoruna-autobuses-urbanos.html" aria-current="page">Transporte urbano</a></li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <button type="button" aria-expanded="false" aria-controls="submenu-lugo" aria-haspopup="true">
-                  Lugo
-                  <span class="dropdown-icon" aria-hidden="true">▼</span>
-                </button>
-                <ul id="submenu-lugo" class="submenu" hidden>
-                  <li><a href="../../../provincias/lugo/que-visitar/lugo-museo-provincial.html">Qué visitar</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+          <div data-menu-container data-menu-src="../../../partials/main-menu.html" data-menu-base="../../../" aria-live="polite"></div>
         </div>
       </div>
     </div>
@@ -431,5 +387,7 @@
 
     })();
   </script>
+  <script src="../../../js/menu-interactions.js"></script>
+  <script src="../../../js/menu-loader.js"></script>
 </body>
 </html>
