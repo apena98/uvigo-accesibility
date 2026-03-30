@@ -343,50 +343,7 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      'use strict';
 
-      const menuToggle = document.querySelector('.menu-toggle');
-      const mainMenu = document.getElementById('main-menu');
-
-      if (menuToggle) {
-        menuToggle.addEventListener('click', function () {
-          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-          menuToggle.setAttribute('aria-expanded', String(!isExpanded));
-          menuToggle.classList.toggle('active');
-          mainMenu.classList.toggle('menu-open');
-          menuToggle.setAttribute('aria-label', isExpanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
-        });
-      }
-
-      function closeAllSubmenus(except) {
-        document.querySelectorAll('.menu-item-has-children > button').forEach(function (btn) {
-          if (btn !== except) {
-            btn.setAttribute('aria-expanded', 'false');
-            document.getElementById(btn.getAttribute('aria-controls')).hidden = true;
-          }
-        });
-      }
-
-      document.querySelectorAll('.menu-item-has-children > button').forEach(function (button) {
-        button.addEventListener('click', function () {
-          const submenu = document.getElementById(button.getAttribute('aria-controls'));
-          const isExpanded = button.getAttribute('aria-expanded') === 'true';
-          closeAllSubmenus(button);
-          button.setAttribute('aria-expanded', String(!isExpanded));
-          submenu.hidden = isExpanded;
-        });
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!e.target.closest('.menu-item-has-children')) {
-          closeAllSubmenus(null);
-        }
-      });
-
-    })();
-  </script>
   <script src="../../../js/menu-interactions.js"></script>
   <script src="../../../js/menu-loader.js"></script>
 </body>
