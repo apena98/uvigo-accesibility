@@ -1,12 +1,12 @@
 ---
-description: "WCAG 2.1 AA accessibility compliance for HTML and CSS. Use when: generating HTML markup, writing CSS styles, creating forms, adding images, implementing navigation, or working on any visual or interactive elements for the AccesiVigo project."
+description: "WCAG 2.1 AA accessibility compliance for HTML and CSS. Use when: generating HTML markup, writing CSS styles, creating forms, adding images, implementing navigation, or working on any visual or interactive elements for the AccesiUVigo project."
 applyTo:
   - "**/*.html"
   - "**/*.css"
   - "**/*.htm"
 ---
 
-# Instrucciones de Accesibilidad WCAG 2.1 AA - AccesiVigo
+# Instrucciones de Accesibilidad WCAG 2.1 AA - AccesiUVigo
 
 Este proyecto debe cumplir **WCAG 2.1 nivel AA** en su totalidad. Todo el HTML y CSS generado debe ser accesible para personas con discapacidad visual y otras discapacidades.
 
